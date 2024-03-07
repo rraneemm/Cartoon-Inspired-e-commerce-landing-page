@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>E-Commically Furniture Shopping</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="navLogo"><a href="#">Comic Fun-iture</a></div>
+            <ul class="navLinks" id="nav-Links">
+                <li class="link"><a href="#home">Home</a></li>
+                <li class="link"><a href="#about">About</a></li>
+                <li class="link"><a href="#craft">Fun-iture</a></li>
+                <li class="link"><a href="#words">Testimonials</a></li>
+                <li class="link"><a href="#blog">Blog</a></li>
+            </ul>
+
+            <div class="navMenuBtn" id="menuBtn">
+                <span><i class="ri-menu-line"></i></span>
+            </div>
+            <div class="navActions">
+                <span><i class="ri-search-line"></i></span>
+                <span><i class="ri-user-smile-fill"></i></span>
+            </div>
+        </nav>
+        <div class="section__container header_container" id="home">
+            <h1>Fun + Furniture = Fun-iture</h1>
+            <p>
+                Check out these cool furniture pieces that you can only find in your dreams or when you have to babysit
+                your neice and nephew.
+            </p>
+            <form action="/" id="searchForm">
+                <input type="text" id="searchInput" placeholder="Search Fun-iture">
+                <button type="submit"><i class="ri-search-eye-line"></i></button>
+            </form>
+            <div id="productList"></div>
+            <a href="#about"><i class="ri-arrow-down-double-line"></i></a>
+        </div>
+    </header>
+    <section class="section__container choose__container" id="choose">
+        <div class="choose__content">
+            <h2 class="section__header">Why Read This Text?</h2>
+            <p class="section__subheader">
+                You look like someone who likes cartoons!
+                I spent way more than I should on it, so you might have some little fun reading them.
+            </p>
+            <div class="choose__grid">
+                <div class="choose__card">
+                    <span><i class="ri-truck-line"></i></span>
+                    <h4>Fast & Free Shipping</h4>
+                    <p>
+                        We will ship you to our things, we don't ship our things.
+                        Frankly, they are not even real incase you didn't notice that!
+                    </p>
+                </div>
+                <div class="choose__card">
+                    <span><i class="ri-shopping-bag-3-line"></i></span>
+                    <h4>Don't Shop With Us</h4>
+                    <p>
+                        Hey, again! I'm trying my best here to fill this with context but I am running out words if I am
+                        honest with you..
+                    </p>
+                </div>
+                <div class="choose__card">
+                    <span><i class="ri-customer-service-2-line"></i></span>
+                    <h4>24/7 Support</h4>
+                    <p>
+                        So, what is the point of this subject in our 4th year? I think we needed it more in our 1st,
+                        maximum the 2nd year- but fourth just seems pointless.
+                    </p>
+                </div>
+                <div class="choose__card">
+                    <span><i class="ri-loop-right-line"></i></span>
+                    <h4>Hassle Free Returns</h4>
+                    <p>
+                        I could have just Lorem Ipsumed this, but this is more fun don't you think? Given you will be
+                        reading them at all...
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="choose__image">
+            <img src="assets/Bubbles.jpeg" alt="choose">
+        </div>
+    </section>
+    <section class="offer__container" id="offer">
+        <div class="offer__grid__top">
+            <img src="assets/cheesechair.jpeg" alt="offer" />
+            <img src="assets/design2.jpeg" alt="offer" />
+            <img src="assets/berrysofa.jpeg" alt="offer" />
+            <div class="offer__content">
+                <h2 class="section__header">Fun Offers</h2>
+                <p class="section__subheader">
+                    These fruit furniture are hilarious.
+                </p>
+                <button class="btn">Explore Now</button>
+            </div>
+        </div>
+        <div class="offer__grid__bottom">
+            <img src="assets/berry-chair.jpeg" alt="offer" />
+            <img src="assets/headerA.jpeg" alt="offer" />
+            <img src="assets/twofruits.jpeg" alt="offer" />
+            <img src="assets/design.jpeg" alt="offer" />
+
+        </div>
+    </section>
+    <section class="section__container craft__container" id="craft">
+        <div class="craft__content">
+            <h2 class="section__header">Crafted with animated material</h2>
+            <p class="section__subheader">
+                Take it up a notch with no real furniture at all!
+            </p>
+            <button class="btn">Explore</button>
+        </div>
+        <div class="craft__image">
+            <div class="craft__image__content">
+                <img src="assets/cartoonsofa.jpeg" alt="craft" />
+                <p>Catwoman's Sofa</p>
+                <h4>$5.00</h4>
+            </div>
+            <a href="#"><i class="ri-add-line"></i></a>
+        </div>
+        <div class="craft__image">
+            <div class="craft__image__content">
+                <img src="assets/painting.jpeg" alt="craft" />
+                <p>Superman's Painting</p>
+                <h4>$6.00</h4>
+            </div>
+            <a href="#"><i class="ri-add-line"></i></a>
+        </div>
+        <div class="craft__image">
+            <div class="craft__image__content">
+                <img src="assets/cartoonlamp.jpeg" alt="craft" />
+                <p>Bugs Bunny's Lamp</p>
+                <h4>$7.00</h4>
+            </div>
+            <a href="#"><i class="ri-add-line"></i></a>
+        </div>
+    </section>
+    <section class="section__container testimonial__container" id="testimonial">
+        <h2 class="section__header">Our Founders</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="testimonial__card">
+                        <p>
+                            I am BATMAN, I have so much money and I paid these people to make all of that just for fun.
+                            I am aware they use me for my money but my girlfriend, Batgirl, convinced me and I like to
+                            spoil her. I also have to admit their modern design
+                            expertise completely transformed my home into a contemporary
+                            haven.
+                        </p>
+                        <img src="assets/batman.jpeg" alt="testimonial" />
+                        <h4>Batman</h4>
+                        <h5>CEO, Money King</h5>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial__card">
+                        <p>
+                            I hired them to revamp our office space, and the results
+                            exceeded my expectations. Their innovative design concepts
+                            breathed new life into our workplace, making it both functional
+                            and stylish. The team's attention to detail and commitment to
+                            quality are truly commendable.
+                        </p>
+                        <img src="assets/bugsbunny.jpeg" alt="testimonial" />
+                        <h4>Bugs Bunny</h4>
+                        <h5>Office Renovator</h5>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial__card">
+                        <p>
+                            I had a vision of a minimalist-inspired home, and I didn't find anyone who can help build
+                            the vision I had in mind. I got the idea to build my own business to create the image I want
+                            and thanks to super rich husband, I was able to build this business to serve all the cartoon
+                            universe.
+                        </p>
+                        <img src="assets/batgirl.jpeg" alt="testimonial" />
+                        <h4>Batgirl</h4>
+                        <h5>CEO, Founder</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__content">
+                <h4>The Truth</h4>
+                <p>
+                    It is worth mentioning that this is a guided project since HTML,CSS, and JAVASCRIPT WebDesign
+                    projects are basic but long so I chose a template of a page and followed its style with my touch of
+                    silliness.
+                    Also I am so bad when it comes to 'design', which is why Front-End isn't really my thing at all...
+                </p>
+            </div>
+            <div class="footer__form">
+                <form action="/">
+                    <input type="text" placeholder="Enter your email" />
+                    <button>Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="section__container footer__bar">
+            <div class="footer__logo">
+                <h4><a href="#">Comic Fun-iture</a></h4>
+                <p>Copyright © 2023 Web Design Mastery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
