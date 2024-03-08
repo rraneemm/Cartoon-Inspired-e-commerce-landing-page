@@ -3,9 +3,11 @@ const navLinks = document.getElementById("nav-Links");
 const menuBtnIcon = menuBtn.querySelector("i");
 
 const products = [
-  { name: "Catwoman's Sofa", price: 5 },
-  { name: "Superman's Painting", price: 6 },
-  { name: "Bugs Bunny's Lamp", price: 7 },
+  { name: "Catwoman's Sofa", price: 5, img: "./assets/cartoonsofa.jpeg" },
+  { name: "Superman's Painting", price: 6, img: "assets/painting.jpeg" },
+  { name: "Bugs Bunny's Lamp", price: 7, img: "assets/cartoonlamp.jpeg" },
+  { name: "Sofa", price: 8 },
+  // add more products
 ];
 
 menuBtn.addEventListener("click", (e) => {
@@ -62,6 +64,9 @@ function loadProducts(productList) {
     productDiv.classList.add("product");
     productDiv.innerHTML = `<h3>${product.name}</h3>
     <p>$${product.price}.00</p>`;
+    // const imgElement = document.createElement("img");
+    // imgElement.src = product.img;
+    // productDiv.appendChild(imgElement);
     productListDiv.appendChild(productDiv);
   });
 }
